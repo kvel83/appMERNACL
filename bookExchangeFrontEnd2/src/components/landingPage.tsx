@@ -3,8 +3,8 @@ import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 
-import landingImage from '../assets/nombre.png';
-import kidsReading from '../assets/kidsReading.png';
+import landingImage from '@assets/nombre.png';
+import kidsReading from '@assets/kidsReading.png';
 import { useState } from 'react';
 import LoginForm from './loginForm';
 import { imageLeft, kids, landingButtons, landingImages } from '../styles/styles';

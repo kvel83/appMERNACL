@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 import {DialogTitle, Typography } from '@mui/material';
-import { boxButtons, modal, modalTitle, typographyModal } from '../styles/styles';
+import { boxButtons, modal, modalTitle, typographyModal } from '@styles/styles';
 
 interface ErrorModalProps {
     openError: boolean;

@@ -1,13 +1,13 @@
 import { DialogTitle } from '@mui/material';
 import React, { useState } from 'react';
 
-import auth from '../services/auth.service';
-import RegistrationFormInt from '../interfaces/registrationForm';
+import auth from '@services/auth.service';
+import RegistrationFormInt from '@interfaces/registrationForm';
 import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
-import { boxButtons, button, modal, modalTitle } from '../styles/styles';
+import { boxButtons, button, modal, modalTitle } from '@styles/styles';
 import isStrongPassword from 'validator/lib/isStrongPassword';
 import validator from 'validator';
 import ErrorModal from './errorModal';

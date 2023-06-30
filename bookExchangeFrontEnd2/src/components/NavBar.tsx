@@ -1,16 +1,16 @@
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import logo from '../assets/logo.png';
+import logo from '@assets/logo.png';
 import { useTheme } from '@mui/material/styles';
 import { CssBaseline } from '@mui/material';
 import { useState } from 'react';
 import LoginForm from './loginForm';
 import RegistrationForm from './registrationForm';
-import UserInformation from '../interfaces/userInformation';
+import UserInformation from '@interfaces/userInformation';
 import ProfileMenu from './profileMenu';
 import LandingMenu from './landingMenu';
-import { navBarBox, navBarChange } from '../styles/styles';
+import { navBarBox, navBarChange } from '@styles/styles';
 
 function NavBar() {
   const [showLoginForm, setShowLoginForm] = useState(false);

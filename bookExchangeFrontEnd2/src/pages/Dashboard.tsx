@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Grid, Card, CardActionArea, CardMedia, CardContent, Typography } from '@mui/material';
 
-import library from '../assets/library.avif';
-import findBook from '../assets/findBook.jpeg';
-import findUser from '../assets/findUser.jpeg';
-import { cardSize } from '../styles/styles';
+import library from '@assets/library.avif';
+import findBook from '@assets/findBook.jpeg';
+import findUser from '@assets/findUser.jpeg';
+import { cardSize } from '@styles/styles';
 
 const Dashboard: React.FC = () => {
   return (

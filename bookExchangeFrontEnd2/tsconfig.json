@@ -19,7 +19,10 @@
     "skipLibCheck": true,                                 /* Skip type checking all .d.ts files. */
     "paths": {
       "@/*":["./src/*", "./dist/*", ""],
-      "@styles/*":["src/styles/*"]
+      "@styles/*":["src/styles/*"],
+      "@assets/*":["src/assets/*"],
+      "@services/*":["src/services"],
+      "@interfaces/*":["src/interfaces"]
     }
   },
   "exclude": ["node_modules"],

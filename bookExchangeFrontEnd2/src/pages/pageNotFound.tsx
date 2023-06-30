@@ -1,5 +1,5 @@
 import { Grid, Typography } from "@mui/material";
-import pageNotFound from '../assets/404.png'
+import pageNotFound from '@assets/404.png'
 
 const PageNotFound = () => {
     return(

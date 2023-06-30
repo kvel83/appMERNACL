@@ -5,10 +5,10 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import isStrongPassword from 'validator/lib/isStrongPassword';
 import {DialogTitle, Typography } from '@mui/material';
-import auth from '../services/auth.service';
+import auth from '@services/auth.service';
 import { useNavigate } from 'react-router-dom';
 import ErrorModal from './errorModal';
-import { boxButtons, button, modal, modalTitle, typographyModal } from '../styles/styles';
+import { boxButtons, button, modal, modalTitle, typographyModal } from '@styles/styles';
 
 interface LoginFormProps {
   open: boolean;

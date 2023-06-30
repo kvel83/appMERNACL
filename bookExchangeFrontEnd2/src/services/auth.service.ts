@@ -1,5 +1,5 @@
 import axios from "axios";
-import User from "../interfaces/user";
+import User from "@interfaces/user";
 
 const API_URL = "http://localhost:3000/api/auth/";
 

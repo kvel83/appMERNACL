@@ -5,7 +5,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 
-import logo from '../assets/logo.png'
+import logo from '@assets/logo.png'
 import { useTheme } from '@mui/material/styles';
 import { CssBaseline } from '@mui/material';
 

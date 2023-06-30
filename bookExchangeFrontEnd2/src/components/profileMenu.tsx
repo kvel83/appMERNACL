@@ -3,9 +3,9 @@ import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Fade from '@mui/material/Fade';
-import UserInformation from '../interfaces/userInformation';
+import UserInformation from '@interfaces/userInformation';
 import { useNavigate } from 'react-router-dom';
-import { buttonsNavBar } from '../styles/styles';
+import { buttonsNavBar } from '@styles/styles';
 
 interface ProfileMenuOptions {
   userInformation: UserInformation;

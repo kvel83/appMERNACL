@@ -1,5 +1,5 @@
 require('dotenv').config();
-const db = require("../models");
+const db = require("@models");
 const Book = db.book;
 const User = db.user;
 
