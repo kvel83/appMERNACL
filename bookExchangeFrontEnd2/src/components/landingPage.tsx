@@ -1,10 +1,10 @@
-import { CssBaseline} from '@mui/material';
+import { CssBaseline,useTheme} from '@mui/material';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 
-// import landingImage from '../assets/nombre.png';
-// import kidsReading from '../assets/kidsReading.png';
+import landingImage from '../assets/nombre.png';
+import kidsReading from '../assets/kidsReading.png';
 import { useState } from 'react';
 import LoginForm from './loginForm';
 import { imageLeft, kids, landingButtons, landingImages } from '../styles/styles';
@@ -13,7 +13,7 @@ import UserRegistration from './registrationForm';
 
 
 const LandingPage =() => {
-  // const theme = useTheme();
+  const theme = useTheme();
   const [open, setOpen] = useState(false);
   const [openRegistration, setOpenRegistration] = useState(false);
 
@@ -42,10 +42,10 @@ const LandingPage =() => {
       <Container maxWidth="sm">
         <Grid container spacing={2} sx = {landingImages}>
           <Grid item xs={6} sx = {imageLeft}>
-            {/* <img src={landingImage} alt="Landing Page Image" className = 'landing-image' style={theme.landingImage}/> */}
+            <img src={landingImage} alt="Landing Page Image" className = 'landing-image' style={theme.landingImage}/>
           </Grid>
           <Grid item xs={6} sx = {kids}>
-            {/* <img src = {kidsReading} alt = "Niños leyendo" className = 'kids-reading' style={theme.kidsReading}/> */}
+            <img src = {kidsReading} alt = "Niños leyendo" className = 'kids-reading' style={theme.kidsReading}/>
           </Grid>
         </Grid>
         <Grid container sx = {landingButtons}>

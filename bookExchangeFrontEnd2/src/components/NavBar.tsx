@@ -1,8 +1,8 @@
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-// import logo from '../assets/logo.png';
-// import { useTheme } from '@mui/material/styles';
+import logo from '../assets/logo.png';
+import { useTheme } from '@mui/material/styles';
 import { CssBaseline } from '@mui/material';
 import { useState } from 'react';
 import LoginForm from './loginForm';
@@ -46,14 +46,14 @@ function NavBar() {
     setShowLandingMenu(false);
   };
 
-  // const theme = useTheme();
+  const theme = useTheme();
 
   return (
     <>
       <CssBaseline />
       <AppBar position="fixed" className="full-app-navbar">
         <Toolbar disableGutters>
-          {/* <img src={logo} alt="Logo" className="logo-image" style={theme.logoImage} /> */}
+          <img src={logo} alt="Logo" className="logo-image" style={theme.logoImage} />
           <Box sx={navBarBox}>
             <Box sx={navBarChange}>
               {!userInformation && !showLandingMenu && (

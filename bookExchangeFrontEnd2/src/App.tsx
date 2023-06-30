@@ -1,3 +1,4 @@
+require('../module-alias');
 import './App.css'
 import { CssBaseline, Grid, ThemeProvider } from '@mui/material';
 import themeOptions from './config/otherTheme';

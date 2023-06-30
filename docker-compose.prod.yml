@@ -1,0 +1,34 @@
+version: "3"
+
+services:
+  # frontend:
+    # container_name: frontEndBookExchangeProd
+    # build:
+      # context: .
+      # dockerfile: bookExchangeFrontEnd2/Dockerfile.frontProd
+    # ports:
+      # - "8080:80"
+    # networks:
+      # - my-network
+
+  backend:
+    container_name: bookExchangeBackEndProd
+    build:
+      context: .
+      dockerfile: nodeBackenBookEnxachange/Dockerfile.backProd
+    ports:
+      - "4500:4500"
+    networks:
+      - my-network
+
+  mongo:
+    container_name: mongoBookExchangeBBDD
+    image: mongo:latest
+    networks:
+      - my-network
+    ports:
+      - "27051:27017"
+
+networks:
+  my-network:
+    driver: bridge

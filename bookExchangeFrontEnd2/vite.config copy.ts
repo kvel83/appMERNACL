@@ -15,16 +15,10 @@ function renderChunks(deps: Record<string, string>) {
 export default defineConfig({
   plugins: [react()],
   resolve: {
-    alias: {
-      '~': path.resolve(__dirname, 'src'),
-      '@components': path.resolve(__dirname, 'src/components'),
-      '@config': path.resolve(__dirname, 'src/config'),
-      '@interfaces': path.resolve(__dirname, 'src/interfaces'),
-      '@pages': path.resolve(__dirname, 'src/pages'),
-      '@services': path.resolve(__dirname, 'src/services'),
-      '@styles': path.resolve(__dirname, 'src/styles'),
-      './runtimeConfig': './runtimeConfig.browser',
-    },
+    alias: [
+      { find: '~', replacement: path.resolve(__dirname, 'src') },
+      { find: './runtimeConfig', replacement: './runtimeConfig.browser' },
+    ],
   },
   build: {
     sourcemap: false,
